@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Home page - Bold Films</title>
+   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+   <!-- css -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="css/owl.carousel.css" />
+   <link rel="stylesheet" href="css/owl.theme.default.css" />
+   <link rel="stylesheet" href="css/style.css" />
+   <!-- jquery -->
+   <script src="js/jquery-3.7.1.js"></script>
+</head>
+
+<body class="flex min-h-[100vh] flex-col bg-black text-white">
+   <!-- video -->
+   <div class="fixed inset-0 z-50 bg-black hidden" id="video">
+      <video src="video/intro.mp4" autoplay muted></video>
+   </div>
+
+   <!-- navbar -->
+   <nav
+      class="group/navbar fixed top-0 z-40 w-full bg-transparent text-white transition-all duration-700 [&.open]:bg-black [&.scrolled:not(.open)]:bg-white [&.scrolled:not(.open)]:text-black"
+      id="myNavbar">
+      <div class="container mx-auto flex flex-wrap items-center p-6 group-[.scrolled]/navbar:py-4">
+         <a href="#">
+            <img class="w-20 invert group-[.scrolled:not(.open)]/navbar:invert-0 sm:w-[90px] md:w-[120px]"
+               src="img/logo.svg" alt="" />
+         </a>
+         <button class="group peer relative ml-auto flex h-6 w-10 flex-col justify-between hover:opacity-70 md:hidden"
+            id="navbar-toggler">
+            <div
+               class="h-0.5 w-full bg-current transition-[transform] duration-500 group-[.cross]:absolute group-[.cross]:top-1/2 group-[.cross]:rotate-[315deg]">
+            </div>
+            <div class="h-0.5 w-full bg-current group-[.cross]:hidden"></div>
+            <div
+               class="h-0.5 w-full bg-current transition-[transform] duration-500 group-[.cross]:absolute group-[.cross]:top-1/2 group-[.cross]:rotate-[405deg]">
+            </div>
+         </button>
+         <ul
+            class="absolute left-0 top-full hidden h-[calc(100vh-85px)] w-full space-y-6 bg-black p-6 text-3xl font-semibold uppercase text-white peer-[.cross]:block md:static md:ml-auto md:flex md:h-auto md:w-auto md:space-x-7 md:space-y-0 md:bg-transparent md:p-0 md:text-xl md:group-[.scrolled]/navbar:text-black">
+            <li><a class="block" href="#">Home</a></li>
+            <li><a class="block" href="#">Films</a></li>
+            <li><a class="block" href="#">Series</a></li>
+            <li><a class="block" href="#">About</a></li>
+            <li><a class="block" href="#">News</a></li>
+         </ul>
+      </div>
+   </nav>
+
+   <!-- carousel -->
+   <div class="owl-carousel" id="hero_carousel">
+      <div class="item relative">
+         <div class="absolute -z-10 h-full w-full">
+            <div class="banner-img">
+               <img src="img/oslo-banner.png" alt="" />
+            </div>
+         </div>
+         <div class="container mx-auto">
+            <div class="px-6 pb-4 pt-20 sm:pb-24 sm:pt-24 md:px-20 lg:w-9/12 xl:w-[60%]">
+               <p class="mb-6 text-3xl uppercase">featured titles</p>
+               <img class="mb-6 block w-full" src="img/OSLO-title.png" alt="" />
+               <p class="mb-6 hidden md:block">
+                  <strong class="uppercase"> out now on HBO max! </strong>
+                  Adapted from the Tony Award-winning play of the same name, Oslo
+                  follows the secret back-channel talks, unlikely friendships, and
+                  quiet heroics of a small but committed group of Israelis and
+                  Palestinians, plus one Norwegian couple, that led to the 1993 Oslo
+                  Peace Accords.
+               </p>
+               <div class="mb-6 flex flex-wrap gap-4">
+                  <a href="#" class="rounded border border-white px-6 py-2 text-xs uppercase md:py-2.5 md:text-sm">
+                     <i class="fas fa-arrow-right-long mr-2 text-sm"></i>explore more
+                  </a>
+                  <a href="#"
+                     class="rounded border bg-white px-6 py-2 text-xs uppercase text-black md:py-2.5 md:text-sm">
+                     view trailer
+                  </a>
+               </div>
+               <p class="hidden md:block">
+                  <strong>Writer</strong>: J.T. Rogers&nbsp;<strong>Director:</strong>
+                  Bartlett Sher&nbsp;<strong>Key Cast</strong>: Ruth Wilson, Andrew
+                  Scott
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="item relative">
+         <div class="absolute -z-10 h-full w-full">
+            <div class="banner-img">
+               <img src="img/The_Guilty_banner.jpeg" alt="" />
+            </div>
+         </div>
+         <div class="container mx-auto">
+            <div class="px-6 pb-4 pt-20 sm:pt-24 md:px-20 lg:w-9/12 xl:w-[60%]">
+               <p class="mb-8 text-3xl uppercase">featured titles</p>
+               <img class="mb-6 block w-full" src="img/Guilty-Title.png" alt="" />
+               <p class="mb-6 hidden text-sm md:block">
+                  <strong class="block uppercase"> out now on Netflix! </strong>
+                  Adapted from the Award-winning Danish film “Den Sklydige”,
+                  911&nbsp;operator Joe Bayler (Jake Gyllenhaal)&nbsp;works
+                  relentlessly&nbsp;to save a caller in grave danger—but soon
+                  discovers that nothing is as it seems, and facing the truth is the
+                  only way out. &nbsp;Directed by Antoine Fuqua.
+               </p>
+               <div class="mb-6 flex flex-wrap gap-4">
+                  <a href="#" class="rounded-md border border-white px-6 py-2 text-xs uppercase md:py-2.5 md:text-sm">
+                     <i class="fas fa-arrow-right-long mr-2 text-sm"></i>explore more
+                  </a>
+                  <a href="#"
+                     class="rounded-md border bg-white px-6 py-2 text-xs uppercase text-black md:py-2.5 md:text-sm">
+                     view trailer
+                  </a>
+               </div>
+               <p class="hidden text-sm md:block">
+                  <strong>Writer</strong>: Nic Pizzolatto
+                  <strong>Director:</strong> Antoine Fuqua
+                  <strong>Key Cast</strong>: Jake Gyllenhaal, Riley Keough, Peter
+                  Sarsgaard, Ethan Hawke, Paul Dano
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- featured -->
+   <div class="container mx-auto mb-24 px-6">
+      <h1 class="mb-2 text-xl font-bold uppercase lg:text-2xl">featured</h1>
+      <div class="owl-carousel" id="featured_carousel">
+         <div class="item">
+            <img class="w-full" src="img/DRIVE.jpg" alt="" />
+            <h1 class="text-lg font-semibold uppercase">drive</h1>
+         </div>
+         <div class="item">
+            <img class="w-full" src="img/Nightcrawler.jpg" alt="" />
+            <h1 class="text-lg font-semibold uppercase">nightcrawler</h1>
+         </div>
+         <div class="item">
+            <img class="w-full" src="img/whiplash.jpg" alt="" />
+            <h1 class="text-lg font-semibold uppercase">whiplash</h1>
+         </div>
+         <div class="item">
+            <img class="w-full" src="img/oslo.png" alt="" />
+            <h1 class="text-lg font-semibold uppercase">oslo</h1>
+         </div>
+         <div class="item">
+            <img class="w-full" src="img/The_Guilty.jpeg" alt="" />
+            <h1 class="text-lg font-semibold uppercase">the guilty</h1>
+         </div>
+      </div>
+      <div class="pt-8 text-center lg:pt-12 xl:pt-10">
+         <button class="rounded border border-white px-5 py-3 text-sm uppercase">
+            all films >
+         </button>
+      </div>
+   </div>
+
+   <!-- top stories -->
+   <div class="container mx-auto px-6">
+      <h1 class="mb-2 text-xl font-bold uppercase lg:text-2xl">top stories</h1>
+      <div class="owl-carousel" id="stories_carousel">
+         <div class="item">
+            <img class="w-full" src="img/s1.webp" alt="" />
+            <h1 class="my-1 text-lg">
+               Jeff Kleeman Appointed As Bold Films’ New CEO
+            </h1>
+            <p>April 14, 2023 | Deadline | Matt Grobar</p>
+         </div>
+         <div class="item">
+            <img class="w-full" src="img/s2.webp" alt="" />
+            <h1 class="my-1 text-lg">
+               ‘Whiplash In Concert’ To Launch World Tour In October; Composer
+               Justin Hurwitz Conducts Jazz Big Band Alongside Film
+            </h1>
+            <p class="text-base">July 21, 2023 | Deadline | Patrick Hipes</p>
+         </div>
+         <div class="item">
+            <img class="w-full" src="img/s3.webp" alt="" />
+            <h1 class="my-1 text-lg">
+               Critics Choice Awards: ‘The Power Of The Dog’ Wins Best Picture
+               &amp; Jane Campion Is Best Director; ‘Ted Lasso’ &amp; ‘Succession’
+               Top TV – Full List
+            </h1>
+            <p class="text-base">
+               March 13, 2023 | Deadline | Erik Pederson, Rosy Codero, Fred Topel
+            </p>
+         </div>
+         <div class="item">
+            <img class="w-full" src="img/s4.jpg" alt="" />
+            <h1 class="my-1 text-lg">
+               Seth Rogen And Elle Fanning Eyeing ‘Chippendales’ Pic Starring Dev
+               Patel
+            </h1>
+            <p class="text-base">December 9, 2023 | Deadline | Justin Kroll</p>
+         </div>
+         <div class="item">
+            <img class="w-full" src="img/s5.jpg" alt="" />
+            <h1 class="my-1 text-lg">
+               Jake Gyllenhaal On Antoine Fuqua Netflix Film ‘The Guilty’: 69
+               Million Households, No. 1 In 91 Countries
+            </h1>
+            <p class="text-base">
+               October 18, 2023 | Deadline | Mike Fleming Jr.
+            </p>
+         </div>
+      </div>
+      <div class="pt-8 text-center lg:pt-12 xl:pt-10">
+         <button class="rounded border border-white px-5 py-3 text-sm uppercase">
+            Explore all stories >
+         </button>
+      </div>
+   </div>
+
+   <!-- footer -->
+   <div
+      class="container mx-auto mt-auto flex flex-col items-center justify-between space-y-6 py-12 text-white md:flex-row md:px-6">
+      <div class="flex space-x-4 text-xl">
+         <a href="#"><i class="fab fa-twitter"></i></a>
+         <a href="#"><i class="fab fa-instagram"></i></a>
+         <a href="#"><i class="fab fa-facebook-f"></i></a>
+      </div>
+      <div class="text-[10px] md:text-sm">
+         Bold - Designed by Abdullah Madni
+      </div>
+   </div>
+
+   <!-- script -->
+   <script src="js/owl.carousel.js"></script>
+   <script src="js/app.js"></script>
+</body>
+
+</html>
